@@ -157,8 +157,8 @@ def pretty_plot_confusion_matrix(df_cm, annot=True, cmap="Oranges", fmt='.2f', f
                     cbar=cbar, cmap=cmap, linecolor='w', fmt=fmt)
 
     #set ticklabels rotation
-    ax.set_xticklabels(ax.get_xticklabels(), rotation = 45, fontsize = 10)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation = 25, fontsize = 10)
+    ax.set_xticklabels(ax.get_xticklabels(), rotation = 45, fontsize = 13)
+    ax.set_yticklabels(ax.get_yticklabels(), rotation = 25, fontsize = 13)
 
     # Turn off all the ticks
     for t in ax.xaxis.get_major_ticks():
@@ -204,7 +204,7 @@ def pretty_plot_confusion_matrix(df_cm, annot=True, cmap="Oranges", fmt='.2f', f
 #
 
 def plot_confusion_matrix_from_data(y_test, predictions, columns=None, annot=True, cmap="Oranges",
-      fmt='.2f', fz=11, lw=0.5, cbar=False, figsize=[8,8], show_null_values=0, pred_val_axis='lin'):
+      fmt='.2f', fz=11, lw=0.5, cbar=False, figsize=[10,10], show_null_values=0, pred_val_axis='lin'):
     """
         plot confusion matrix function with y_test (actual values) and predictions (predic),
         whitout a confusion matrix yet
